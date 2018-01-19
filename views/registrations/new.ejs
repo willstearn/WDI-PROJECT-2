@@ -1,0 +1,151 @@
+
+<% if (locals.message) { %>
+  <p><%= message %></p>
+<% } %>
+
+<!--
+<div class="container" id="registrationpage">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 border border-secondary">
+      <h2>Register</h2>
+      <form method="POST" action="/register" class="registrationpage">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" name="name" id="firstname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="artist" id="lastname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" name="image" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="passwordconfirmation">Password Confirmation</label>
+          <input type="text" name="text" id="passwordconfirmation" class="form-control">
+        </div>
+        <button class="btn btn-secondary">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="container">
+  <br><br>
+  <div id="display">
+    <div class="row">
+    <div id="signupbox" class="mainbox col-sm-8 col-sm-offset-2 signup-box">
+      <div class="" id="signUP">
+        <div class="">
+          <br>
+            <h3 id="wellcome">Welcome</h3>
+          <p id="abt">Post music from Youtube when you can't find it on Spotify</p>
+          <a href="/login">
+            <center><button id="create">Already have an account?</button></center>
+          </a>
+          <br>
+          <p id="already">To register please provide the following info</p>
+          <form id="signupform" class="form-horizontal" role="form" method="POST" action="/register">
+            <div class="form-group">
+
+            </div>
+            <div class="form-group">
+              <div>
+                <center><input type="text" name="email" placeholder="Email Address"></center>
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <center><input type="text" name="username" placeholder="Username"></center>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <div>
+                <center><input type="text" name="profile picture" placeholder="Profile pic link"></center>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <div>
+                <center><input type="password" name="password" placeholder="Password"></center>
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <center><input type="password" name="passwordConfirmation" placeholder="Password"></center>
+              </div>
+            </div>
+            <div class="form-group">
+              <div >
+                <%# <button id="btn-signup" type="button" class="btn btn-info"> <i class="icon-hand-right"></i> &nbsp; Sign Up </button>%>
+                <center><input type="submit" name="signup" class="btn btn-primary" value="sign up"></center>
+                <br><br>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<br><br>
+<%#
+<div>
+  <center><input type="text" name="firstName" placeholder="First Name"></center>
+</div>
+</div>
+<div class="form-group">
+<div>
+  <center><input type="text" name="lastName" placeholder="Last Name"></center>
+</div> %>
+
+
+<!--
+<div class="container" id="registrationpage">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 border border-secondary">
+      <h2>Register</h2>
+      <form method="POST" action="/register" class="registrationpage">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" name="name" id="firstname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="artist" id="lastname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" name="image" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="passwordconfirmation">Password Confirmation</label>
+          <input type="text" name="text" id="passwordconfirmation" class="form-control">
+        </div>
+        <button class="btn btn-secondary">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+-->

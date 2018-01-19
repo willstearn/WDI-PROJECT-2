@@ -1,0 +1,49 @@
+<div class="container">
+   <img src="https://www.shareicon.net/download/2016/07/10/119962_youtube.ico" style="width:100px;">
+   <br>
+    <nav class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+             <% if (!locals.isAuthenticated) { %>
+                 <ul class="nav navbar-nav">
+                <li><a href="/" style="margin-left:0px;" class="nav-bar-logotext" >YouTune</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="/login">Login</a>
+                </li>
+            </ul>
+             <% } else { %>
+            <ul class="nav navbar-nav">
+                <li><a href="/" style="margin-left:0px;" class="nav-bar-logotext">YouTune</a></li>
+                <li><a href="/tracks">videos</a></li>
+                <li><a href="/tracks/new">add video</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Profile <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/users/<%= currentUser.id %>"><%= currentUser.username %></a></li>
+                        <li class="divider"></li>
+                        <li><a href="/logout">log out</a></li>
+                    </ul>
+                </li>
+                <li>
+                  <a></a>
+                </li>
+            </ul>
+            <% } %>
+        </div>
+    </nav>

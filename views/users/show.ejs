@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../css/main.css">
+<div>
+  <div class="alert alert-info">
+  <strong><%= user.username %>'s music </strong>
+</div>
+  <div class="row">
+    <% tracks.forEach((track) => { %>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <iframe class="thumbnail" src="https://www.youtube.com/embed/<%= track.link %>?rel=0&amp;controls=0&amp;showinfo=0" alt="<%= track.name %>" id="imgUser"</iframe>
+        <h2><%= track.name %></h2>
+        <p>
+          <%= track.artist %><br>
+          <a href="<%= track.link %>" target="_blank">Go to Video</a>
+
+        </p>
+      </div>
+    <% }) %>
+
+  </div>
+</div>

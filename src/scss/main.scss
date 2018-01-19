@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+
+@import "components/generic";
+@import "components/typography";
+@import "components/footer";
+@import "components/forms";
+
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.col-md-1 {
+  text-decoration: none;
+}
+
+#newtrack {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+#registrationpage {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  max-height: 75%;
+}
+
+#trackname {
+  background-color: #212529;
+}
+
+
+.userpage {
+  transition: 0.3s;
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: #3F3E3E;
+  border-radius: 5px; /* 5px rounded corners */
+
+}
+
+.userpage:hover {
+    padding: 2px 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.underline {
+  text-decoration: underline;
+}
+body{
+  background-color:black;
+}

@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="../../css/main.css">
+<div class="container">
+  <br><br>
+  <div id="display">
+    <div class="row">
+    <div id="signupbox" class="mainbox col-sm-8 col-sm-offset-2 signup-box">
+      <div class="" id="signUP">
+        <div class="">
+          <br>
+            <h3 id="wellcome">Add a track</h3>
+          <p id="abt">Fill in the following info to add a new track</p>
+
+          <form method="POST" action="/tracks" class="newtrack">
+            <div >
+              <div>
+                <center><input type="text" name="name" id="newtrack" placeholder="name"></center>
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <center><input type="text" name="artist" id="artist" placeholder="artist"></center>
+              </div>
+            </div>
+            <%# <div class="form-group">
+              <div>
+                <center><input type="text" name="image" id="image" placeholder="image"></center>
+              </div> %>
+
+            </div>
+            <div class="form-group">
+              <div>
+                <center><input type="link" name="link" id="link" placeholder="YouTube video ID"></center>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <div >
+                <center><input type="submit" name="signup" class="btn btn-primary" value="add"></center>
+                <br><br>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<br><br>
+
+
+<%#<div class="container" id="newtrack">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 border border-secondary">
+      <h1>Add Track</h1>
+      <form method="POST" action="/tracks" class="newtrack">
+        <div class="form-group">
+          <label for="name">Track Name</label>
+          <input type="text" name="name" id="newtrack" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="artist">Artist</label>
+          <input type="text" name="artist" id="artist" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="image">Track Image</label>
+          <input type="text" name="image" id="image" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="link">Track Link</label>
+          <input type="link" name="link" id="link" class="form-control">
+        </div>
+        <button class="btn btn-secondary">Add</button>
+      </form>
+    </div>
+  </div>
+</div>%>
+
+
+
+<%# <div class="container">
+  <form method="POST" action="/tracks">
+    <div class="form-group">
+      <label class="col-form-label" for="link">ADD A LINK</label>
+      <input type="text" class="form-control" name="link" id="link">
+    </div>
+    <div class="form-group">
+      <label class="col-form-label" for="description">ADD A COMMENT</label>
+      <input type="text" class="form-control" name="description" id="description">
+    </div>
+    <button class="btn btn-secondary btn-lg btn-block">POST</button>
+  </form>
+
+  <div class="container">
+    <h1>Add Track</h1>
+
+    <form method="POST" action="/tracks" class="newtrack">
+      <div>
+        <label for="name">Track Name</label>
+        <input type="text" name="name" id="trackname">
+      </div>
+      <div>
+        <label for="artist">Artist</label>
+        <input type="text" name="artist" id="artist">
+      </div>
+      <div>
+        <label for="image">Track Image</label>
+        <input type="text" name="image" id="image">
+      </div>
+      <div>
+        <label for="link">Track Link</label>
+        <input type="link" name="link" id="link">
+      </div>
+
+      <button>Add</button>
+    </form>
+  </div>
+
+
+</div>%>

@@ -1,0 +1,80 @@
+
+
+<% if (locals.message) { %>
+  <p><%= message %></p>
+<% } %>
+
+
+<%# <div class="container" id=“loginpage">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 border border-secondary">
+      <h2>Login</h2>
+      <form method="POST" action="/login" class=“loginpage">
+        <div class="form-group">
+          <label for="password">Email</label>
+          <input type="text" name="email" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="passwordconfirmation">Password</label>
+          <input type="text" name="text" id="passwordconfirmation" class="form-control">
+        </div>
+        <button class="btn btn-secondary">Login</button>
+        <div class="input-group">
+          <div class="checkbox">
+            <label>
+              <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+            </label>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>%>
+
+
+
+<div class="container">
+<br><br>
+  <div id="display">
+    <div>
+       <center><div id="loginbox" class="mainbox  col-lg-left-offset-8 col-sm-8 col-sm-offset-2 loginbox ">
+    <div >
+      <div class="">
+        <br>
+            <h3 id="wellcome">Welcome</h3>
+          <p id="abt">Post music from Youtube when you can't find it on Spotify</p>
+          <a href="/register">
+            <center><button id="create">Create account</button></center>
+          </a>
+          <br>
+          <p id="already">Already have an account?</p>
+        <form id="loginform" role="form" method="POST" action="/login">
+          <div class="form-group">
+          </div>
+          <div>
+            <center><input id="login-email" type="text" name="email" value="" placeholder="email"></center>
+          </div><br>
+          <div>
+            <center><input id="login-password" type="password" name="password" placeholder="password"></center>
+          </div>
+          <!--<div class="input-group">
+            <div class="checkbox">
+              <label>
+                <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+              </label>
+            </div>
+          </div>--> <br>
+          <div>
+            <div>
+              <center><input type="submit" name="login" class="btn btn-primary" value="Login"></center>
+              <%# <a id="btn-login" href="#" class="btn btn-block btn-success" >Login </a>%>
+              <br>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+<br>
