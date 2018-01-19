@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 @import "components/generic";
 @import "components/typography";
@@ -53,4 +54,146 @@ img {
 }
 body{
   background-color:black;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@import "components/generic";
+@import "components/typography";
+@import "components/footer";
+@import "components/forms";
+
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.col-md-1 {
+  text-decoration: none;
+}
+
+#newtrack {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+#registrationpage {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  max-height: 75%;
+}
+
+#trackname {
+  background-color: #212529;
+}
+
+
+.userpage {
+  transition: 0.3s;
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: #3F3E3E;
+  border-radius: 5px; /* 5px rounded corners */
+
+}
+
+.userpage:hover {
+    padding: 2px 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.underline {
+  text-decoration: underline;
+}
+body{
+  background-color:black;
+}
+
+.mainbox{margin:auto}
+.tracks-index h1{color:#000}
+#loginpage{
+	width:100px;
+}
+.loginbox{
+  background-color:#121212;
+}
+#signUP{
+	background-color:#121212;
+}
+#usrimg{
+	height:180px;
+}
+#profile{
+	width:100%;
+	border-radius:50%;
+}
+@media screen and (min-width:422px){
+	#display{
+		width:80%;
+		margin-left:20%;
+	}
+}
+#name{
+	width:100%;
+	text-align:center;
+	height:40px;
+	background:#7D7D7D;
+	color:white;
+}
+#usrnm{
+	padding-top:7px;
+	font-family:Roboto;
+}
+.copyrights{
+margin-top:25px;
+}
+
+footer.container-fluid.text-center.foot {
+    background: #383838;
+}
+
+.dark-line{
+border-top: 1px solid #525252;
+}
+
+.white-txt{
+color: #FFF;
+}
+#imgUser{
+ width:100%;
+ height:200px;
+}
+#usrlnk:hover{
+	text-decoration:none;
+	color:blue;
+}
+#usrtrck{
+	width:100%;
+	height:400px;
+	background:blue;
+}
+body{background-color:#1F1F1F}
+.modal-dialog{background-color:#121212}
+#wellcome{text-align:center;color:white;margin-top:20px;font-family:Roboto}
+#abt{text-align:center;color:white;padding-top:20px}
+#create{width:250px;height:50px;margin-top:30px;border-radius:4px;border:none;background:#4C9900;color:white;font-family:Roboto;font-size:18px}
+#already{text-align:center;background:#121212;color:#8F8F8F;}
+        input{width:80%;height:50px;}
+body{font-family:'Russo One',sans-serif;background-color:black;}
+.footer{position:fixed;left:0;bottom:0;width:100%;background-color:#212529;color:#fff;text-align:center}
+#newtrack{margin-top:20px;margin-bottom:20px}
+#registrationpage{margin-top:20px;margin-bottom:20px;padding-bottom:50px;max-height:75%}#trackname{background-color:#212529}
+.userpage{transition:.3s;margin:20px;padding-bottom:10px;background-color:#3f3e3e;border-radius:5px}
+.userpage:hover{padding:2px 16px;box-shadow:0 8px 16px 0 rgba(0,0,0,.2)}.underline{text-decoration:underline}
+}
+body{
+	background-color:black;
+}
+#loginpage{
+	background-color:black;
 }
